@@ -42,9 +42,9 @@ export const PdfList = () => {
   }, []);
 
   return (
-    <div className="h-auto md:h-full flex flex-col md:flex-row gap-6">
+    <div className="h-auto md:h-full flex flex-col md:flex-row gap-10">
       {/* List */}
-      <div className="w-full md:w-1/3 overflow-y-auto pr-4 space-y-4 custom-scrollbar max-h-[35vh] md:max-h-full">
+      <div className="w-full md:w-1/3 overflow-y-auto pr-4 p-2 space-y-4 custom-scrollbar max-h-[35vh] md:max-h-full">
         <header className="bg-white border-4 border-black p-4 rounded-3xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] mb-6">
           <h2 className="text-2xl font-black text-black">PDF Files</h2>
         </header>
