@@ -27,7 +27,7 @@ export const PdfList = () => {
     const resizeObserver = new ResizeObserver((entries) => {
       for (const entry of entries) {
         if (entry.contentRect.width) {
-          setContainerWidth(entry.contentRect.width - 40); // Subtract padding
+          setContainerWidth(entry.contentRect.width); 
         }
       }
     });
@@ -87,7 +87,7 @@ export const PdfList = () => {
                     </a>
                 </div>
                 <div 
-                    className="flex-1 bg-gray-100 overflow-auto flex justify-center p-4 relative" 
+                    className="flex-1 bg-gray-100 overflow-auto flex justify-center p-2 md:p-4 relative" 
                     ref={containerRef}
                 >
                     <Document
