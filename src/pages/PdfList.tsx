@@ -44,7 +44,7 @@ export const PdfList = () => {
   return (
     <div className="h-full flex flex-col md:flex-row gap-6">
       {/* List */}
-      <div className="w-full md:w-1/3 overflow-y-auto pr-4 space-y-4 custom-scrollbar">
+      <div className="w-full md:w-1/3 overflow-y-auto pr-4 space-y-4 custom-scrollbar max-h-[35vh] md:max-h-full">
         <header className="bg-white border-4 border-black p-4 rounded-3xl shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] mb-6">
           <h2 className="text-2xl font-black text-black">PDF Files</h2>
         </header>
@@ -77,7 +77,7 @@ export const PdfList = () => {
       </div>
 
       {/* Viewer */}
-      <div className="flex-1 bg-white rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col border-4 border-black h-[calc(100vh-6rem)]">
+      <div className="flex-1 bg-white rounded-3xl overflow-hidden shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] flex flex-col border-4 border-black h-[60vh] md:h-[calc(100vh-6rem)]">
         {selectedFile ? (
             <>
                 <div className="bg-[#FFD166] p-4 border-b-4 border-black flex justify-between items-center z-10">
