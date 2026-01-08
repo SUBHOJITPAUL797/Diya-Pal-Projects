@@ -35,7 +35,7 @@ export const FileCard = ({ name, type, date, onView, onDownload }: FileCardProps
           <Icon size={28} className="text-black stroke-[2.5]" />
         </div>
         <div className="flex gap-2">
-            {type !== 'docx' && (
+            {type === 'pdf' && (
               <button 
                   onClick={(e) => { e.stopPropagation(); onView(); }}
                   className="p-2 bg-white text-black border-2 border-black rounded-xl hover:bg-[#FDFFB6] transition-colors shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] active:translate-y-0.5 active:shadow-none" 
